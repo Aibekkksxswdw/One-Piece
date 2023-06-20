@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <style>
     body {
       display: flex;
@@ -139,13 +140,11 @@ document.getElementById("guess-button").addEventListener("click", function() {
         guessInput.disabled = true;
         document.getElementById("guess-button").disabled = true;
 
-        // Create an audio element
+      
         let audio = new Audio('assets/img/win.mp3');
 
-        // Play the audio
+      
         audio.play();
-
-        // Provide the promo code after the game
         let promoCode = "SPECIALCODE123";
         document.getElementById("promo-code").innerHTML = "Your promo code: " + promoCode;
       }
